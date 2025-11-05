@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  25RP20967:
+    image: php:8.2-apache
+    container_name: php_web_123456
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+    restart: always
